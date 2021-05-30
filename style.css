@@ -1,0 +1,180 @@
+
+body {
+    background-color: black;
+    background-image: url("skocko-dodatno/bcg5.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-top: 5%;
+}
+
+.container-fluid {
+    font-size: x-large;
+}
+
+#first-player {
+    padding: 2%;
+    border: tomato;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#second-player {
+    padding: 2%;
+    border: tomato;
+    border-style: solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left {
+    width: 40%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.right {
+    margin-right: 2%;
+    margin-left: 2%;
+    width: 40%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.stats-options {
+    width: 15%;
+}
+
+.game-table {
+    margin-top: 2%;
+    width: 100%;
+    text-align: center;
+}
+
+.game-table tr td {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.game-table td img {
+    padding: 10%;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 30%;
+}
+
+.results-table {
+    margin-top: 3%;
+    width: 100%;
+    text-align: center;
+}
+
+.results-table tr td {
+    color: white;
+    position: relative;
+    text-align: center;
+}
+
+.results-table td img {
+    padding: 10%;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 60%;
+}
+
+.progress {
+    margin-left: 37%;
+    margin-top: 30%;
+    width: 25%;
+    height: 85%;
+    opacity: 0.8;
+}
+
+.progress-bar {
+    background-color: tomato;
+    width: 100%;
+    height: 70%;
+}
+
+.hit {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.choice {    
+    background-color: rgba(255,255,255,0.5);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.choice tr td {
+    color: white;
+    position: relative;
+}
+
+.choice td img {
+    padding: 10%;
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 30%;
+}
+
+.sign {
+    position: absolute;
+    top: 15%;
+    left: 17%;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .sign {
+        font-size: 4vw;
+    }
+}
+
+.btn-margin {
+    margin-top: 9%;
+}
+
+.choice-sign {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-sign {
+        top: 20%;
+        left: 20%;
+        font-size: 5vw;
+    }
+}
+
+.instructions-table {
+    border: tomato;
+    border-style: solid;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.choice-sign-2 {
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    font-size: 1.8vw;
+}
+
+@media screen and (max-width: 768px) {
+    .choice-sign-2 {
+        top: 20%;
+        left: 20%;
+        font-size: 4vw;
+    }
+}

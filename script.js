@@ -179,12 +179,13 @@ $(document).ready(function name() {
     }
 
     function fillInResult(redCnt, yellowCnt) {
+        let flag = 0;
         if(redCnt == 4 && turn == 2)
             flag = 1;
             
-        else if(redCnt == 4 && turn == 1)
+        if(redCnt == 4 && turn == 1)
             flag = 2;
-            
+        
         // fill in result for player2 - calculate position
         let resultTable = null;
         if(turn == 1) {

@@ -26,7 +26,7 @@ $(document).ready(function name() {
     $("#start-game").click(function name() {
         instructionsRead();
         if(canPlay == true)
-            window.location.replace("skocko-podesavanja.html");
+            window.location.replace("podesavanja/index.html");
     })
 
     // choosing sign combinations - events
@@ -212,12 +212,12 @@ $(document).ready(function name() {
 
         if(flag == 1) {
             alert("Prvi igrač je pobedio!");
-            window.location.assign("skocko-podesavanja.html");
+            window.location.assign("podesavanja/index.html");
         }
 
         if(flag == 2) {
             alert("Drugi igrač je pobedio!");
-            window.location.assign("skocko-podesavanja.html");
+            window.location.assign("podesavanja/index.html");
         }
     }
 
@@ -233,7 +233,7 @@ $(document).ready(function name() {
         }
         else if(canPlay == true) {
             localStorage.setItem("arr", arr);
-            window.location.assign("skocko-igra.html");
+            window.location.assign("igra/index.html");
         }
     })
 
@@ -289,7 +289,7 @@ $(document).ready(function name() {
     })
 
     $("#new-game").click(function name() {
-        window.location.assign("skocko-podesavanja.html");
+        window.location.assign("podesavanja/index.html");
     })
 
     function stopwatch1() {
@@ -299,7 +299,7 @@ $(document).ready(function name() {
         if($("#time1").height() >= $("#bar1").height()) {
             clearInterval(handler1);
             alert("Drugi igrač je pobedio!");
-            window.location.assign("skocko-podesavanja.html");
+            window.location.assign("podesavanja/index.html");
         }
     }
 
@@ -310,7 +310,7 @@ $(document).ready(function name() {
         if($("#time2").height() >= $("#bar2").height()) {
             clearInterval(handler2);
             alert("Prvi igrač je pobedio!");
-            window.location.assign("skocko-podesavanja.html");
+            window.location.assign("podesavanja/index.html");
         }
     }
 

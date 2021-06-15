@@ -200,24 +200,24 @@ $(document).ready(function name() {
         y = 0;
 
         while(redCnt > 0) {
-            resultTable.rows.item(x).cells.item(y).innerHTML += '<img src="skocko-dodatno/right.png" class="hit" alt="">';
+            resultTable.rows.item(x).cells.item(y).innerHTML += '<img src="../skocko-dodatno/right.png" class="hit" alt="">';
             y++;
             redCnt--;
         }
         while(yellowCnt > 0) {
-            resultTable.rows.item(x).cells.item(y).innerHTML += '<img src="skocko-dodatno/wrong.png" class="hit" alt="">'
+            resultTable.rows.item(x).cells.item(y).innerHTML += '<img src="../skocko-dodatno/wrong.png" class="hit" alt="">'
             y++;
             yellowCnt--;
         }
 
         if(flag == 1) {
             alert("Prvi igrač je pobedio!");
-            window.location.assign("podesavanja/index.html");
+            window.location.assign("../podesavanja/index.html");
         }
 
         if(flag == 2) {
             alert("Drugi igrač je pobedio!");
-            window.location.assign("podesavanja/index.html");
+            window.location.assign("../podesavanja/index.html");
         }
     }
 
@@ -227,13 +227,13 @@ $(document).ready(function name() {
             let table = document.getElementById("table0");
             document.getElementById("text0").innerHTML = "Drugi igrač zadaje kombinaciju:";
             for(let i = 1; i < 5; i++) {
-                table.rows.item(0).cells.item(i).innerHTML = '<img src="skocko-dodatno/square.png" alt="">';
+                table.rows.item(0).cells.item(i).innerHTML = '<img src="../skocko-dodatno/square.png" alt="">';
             }
             canChoose2 = true;
         }
         else if(canPlay == true) {
             localStorage.setItem("arr", arr);
-            window.location.assign("igra/index.html");
+            window.location.assign("../igra/index.html");
         }
     })
 
@@ -289,7 +289,7 @@ $(document).ready(function name() {
     })
 
     $("#new-game").click(function name() {
-        window.location.assign("podesavanja/index.html");
+        window.location.assign("../podesavanja/index.html");
     })
 
     function stopwatch1() {
@@ -299,7 +299,7 @@ $(document).ready(function name() {
         if($("#time1").height() >= $("#bar1").height()) {
             clearInterval(handler1);
             alert("Drugi igrač je pobedio!");
-            window.location.assign("podesavanja/index.html");
+            window.location.assign("../podesavanja/index.html");
         }
     }
 
@@ -310,7 +310,7 @@ $(document).ready(function name() {
         if($("#time2").height() >= $("#bar2").height()) {
             clearInterval(handler2);
             alert("Prvi igrač je pobedio!");
-            window.location.assign("podesavanja/index.html");
+            window.location.assign("../podesavanja/index.html");
         }
     }
 
